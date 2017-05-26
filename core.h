@@ -8,4 +8,6 @@
 
 #include "sources/error.h"
 
+#include "sources/endianness.h"
+
 #endif // __CORE_H__

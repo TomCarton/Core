@@ -12,6 +12,13 @@ typedef enum
 	kErrorNone = 0,
 
 	kErrorGeneric,
+    kErrorParameter,
+    kErrorMemory,
+
+    kErrorFile = 0x0100,
+    kErrorFileOpen,
+    kErrorFileRead,
+    kErrorFileWrite,
 
 	kErrorImage = 0x0400,
 	kErrorImageFormat,
