@@ -9,21 +9,24 @@
 
 typedef enum
 {
-	kErrorNone = 0,
+    kErrorNone = 0,
 
-	kErrorGeneric,
+    kErrorGeneric,
     kErrorParameter,
+    kErrorNothing,
     kErrorMemory,
+    kErrorFormat,
 
-    kErrorFile = 0x0100,
+    kErrorFile = 0x0300,
+    kErrorFileCreate,
     kErrorFileOpen,
     kErrorFileRead,
     kErrorFileWrite,
 
-	kErrorImage = 0x0400,
-	kErrorImageFormat,
+    kErrorImage = 0x0400,
+    kErrorImageFormat,
 
-	kErrorSize = 0x7FFF
+    kErrorSize = 0x7FFF
 } Error;
 
 
